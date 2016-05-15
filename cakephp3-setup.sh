@@ -182,21 +182,21 @@ cp jquery.min.js /var/www/cakephp/public/webroot/js/;
 
 # Create Layout
 
-echo '<!DOCTYPE html>
+echo $'<!DOCTYPE html>
 <html>
 <head>
     <?= $this->Html->charset(); ?>
     
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <?= $this->Html->meta('icon'); ?>
-    <title><?= $this->fetch('title'); ?></title>
-    <?= $this->Html->css('bootstrap.min.css'); ?>
-    <?= $this->Html->css('bootstrap-theme.min.css'); ?>
-    <?= $this->Html->css('theme.css'); ?>
-    <?= $this->fetch('meta'); ?>
-    <?= $this->fetch('css'); ?>
-    <?= $this->fetch('script'); ?>
+    <?= $this->Html->meta(\'icon\'); ?>
+    <title><?= $this->fetch(\'title\'); ?></title>
+    <?= $this->Html->css(\'bootstrap.min.css\'); ?>
+    <?= $this->Html->css(\'bootstrap-theme.min.css\'); ?>
+    <?= $this->Html->css(\'theme.css\'); ?>
+    <?= $this->fetch(\'meta\'); ?>
+    <?= $this->fetch(\'css\'); ?>
+    <?= $this->fetch(\'script\'); ?>
 </head>
 <body role="document">
     <!-- Fixed navbar -->
@@ -234,10 +234,10 @@ echo '<!DOCTYPE html>
     </nav>
     <div class="container theme-showcase" role="main">
     <?= $this->Flash->render(); ?>
-    <?= $this->fetch('content'); ?>
+    <?= $this->fetch(\'content\'); ?>
     </div>
-    <?= $this->Html->script('jquery.min.js'); ?>
-    <?= $this->Html->script('bootstrap.min.js'); ?>
+    <?= $this->Html->script(\'jquery.min.js\'); ?>
+    <?= $this->Html->script(\'bootstrap.min.js\'); ?>
 </body>
 </html>' > /var/www/cakephp/public/src/Template/Layout/default.ctp;
 

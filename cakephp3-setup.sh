@@ -147,7 +147,7 @@ echo "server {
         }
     }
 
-    location ~* \\.(css|js|ico|gif|png|jpeg|jpg|woff|map)$ {
+    location ~* \\.(css|js|ico|gif|png|jpeg|jpg|woff|map|eot|svg|ttf|woff2)$ {
         root /var/www/$HOSTNAME/public/webroot;
         try_files \$uri =404;
     }
